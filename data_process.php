@@ -36,13 +36,13 @@
 	  if (!empty($_FILES["uploadedimage"]["name"])) 
 {
 	$file_name=$_FILES["uploadedimage"]["name"];
-	echo $file_name;
+	//echo $file_name;
 	$temp_name=$_FILES["uploadedimage"]["tmp_name"];
 	$imgtype=$_FILES["uploadedimage"]["type"];
 	$ext= GetImageExtension($imgtype);
 	$imagename=date("d-m-Y")."-".time().$ext;
 	$target_path = "images/".$imagename;
-	
+	$image="images";
 	
 
 if(move_uploaded_file($temp_name, $target_path)) {
@@ -50,7 +50,8 @@ if(move_uploaded_file($temp_name, $target_path)) {
  	//$query_upload="INSERT into du('image','image_path') values ('$imagename','$target_path')";
 	//mysql_query($query_upload) or die("error in $query_upload == ----> ".mysql_error());  
 	
-}else{
+}
+else{
 
    exit("Error While uploading image on the server");
 } 
@@ -59,7 +60,7 @@ if(move_uploaded_file($temp_name, $target_path)) {
  
 	  $sql = "INSERT INTO du VALUES('','$fname', '$lname','$email','$department',
 				'$occupation','$contactaddress','$residentialaddress','$blood_group',
-				'$contactnumber','$licensenumber','$carnumber','$valid_upto','$imagename','$target_path')";
+				'$contactnumber','$licensenumber','$carnumber','$valid_upto','$imagename','$image')";
 	  if( mysql_query($sql) )
 	{
 	  echo "registered Successfully\n";
