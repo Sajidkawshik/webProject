@@ -1,0 +1,150 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="form.css">
+  <script type="text/javascript">
+  function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width(150)
+                    .height(200);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+  </script>
+</head>
+
+
+
+<body>
+	  <h1>Registration Form</h1>
+  
+  
+  <form id="myForm" action="data_process.php" method="POST">
+	   
+	    
+    <div class="contentform">
+    	<div id="sendmessage"> Your message has been sent successfully. Thank you. </div>
+
+
+    	<div class="leftcontact">
+			      <div class="form-group">
+			        <p>Firstname<span>*</span></p>
+			        <span class="icon-case"><i class="fa fa-male"></i></span>
+				        <input type="text" name="firstname" id="nom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné."/>
+                <div class="validation"></div>
+       </div> 
+
+            <div class="form-group">
+            <p>Last Name <span>*</span></p>
+            <span class="icon-case"><i class="fa fa-user"></i></span>
+				<input type="text" name="lastname" id="prenom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Prénom' doit être renseigné."/>
+                <div class="validation"></div>
+			</div>
+
+			<div class="form-group">
+			<p>E-mail <span>*</span></p>	
+			<span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+                <input type="email" name="email" id="email" data-rule="email" data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire."/>
+                <div class="validation"></div>
+			</div>	
+			
+			<div class="form-group">
+			<p>Occupation <span>*</span></p>
+			<span class="icon-case"><i class="fa fa-info"></i></span>
+                <input type="text" name="occupation" id="fonction" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Fonction' doit être renseigné."/>
+                <div class="validation"></div>
+			</div>
+			
+			
+			
+			
+			<div class="form-group">
+			<p>Company <span>*</span></p>
+			<span class="icon-case"><i class="fa fa-home"></i></span>
+				<input type="text" name="company" id="society" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Société' doit être renseigné."/>
+                <div class="validation"></div>
+			</div>
+
+			<div class="form-group">
+			<p>Company Address <span>*</span></p>
+			<span class="icon-case"><i class="fa fa-location-arrow"></i></span>
+				<input type="text" name="companyaddress" id="adresse" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné."/>
+                <div class="validation"></div>
+			</div>
+			
+			
+			<div class="form-group">
+			<p>Residential Address <span>*</span></p>
+			<span class="icon-case"><i class="fa fa-location-arrow"></i></span>
+				<input type="text" name="residentialaddress" id="adresse" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné."/>
+                <div class="validation"></div>
+			</div>
+
+			
+
+
+	</div>
+
+	<div class="rightcontact">	
+
+			<div class="form-group">
+			<p>City <span>*</span></p>
+			<span class="icon-case"><i class="fa fa-building-o"></i></span>
+				<input type="text" name="city" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+                <div class="validation"></div>
+			</div>	
+
+			<div class="form-group">
+			<p>Phone number <span>*</span></p>	
+			<span class="icon-case"><i class="fa fa-phone"></i></span>
+				<input type="text" name="phonenumber" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
+                <div class="validation"></div>
+			</div>
+
+			<div class="form-group">
+			<p>License number <span>*</span></p>	
+			<span class="icon-case"><i class="fa fa-phone"></i></span>
+				<input type="text" name="licensenumber" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
+                <div class="validation"></div>
+			</div>
+			
+			<div class="form-group">
+			<p>Car number <span>*</span></p>	
+			<span class="icon-case"><i class="fa fa-phone"></i></span>
+				<input type="text" name="carnumber" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
+                <div class="validation"></div>
+			</div>
+			
+<div			
+			<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+			<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+			<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+			<meta charset=utf-8 />
+
+
+<style>
+  article, aside, figure, footer, header, hgroup, 
+  menu, nav, section { display: block; }
+</style>
+
+   <img id="blah" src="#" alt="your image" />	
+  <input type='file' name="photo" onchange="readURL(this);" accept="image/*" />
+   
+   
+
+		
+	</div>		
+	</div>
+	</div>
+<button type="submit" class="bouton-contact">Submit</button>
+	
+</form>	
+
+  
+</body>
+</html>

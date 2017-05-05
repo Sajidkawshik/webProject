@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<head>
+
+
+<style>
+
+.topbar{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E93434;
+}
+
+.t {
+    float: left;
+}
+
+text {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+    margin-right:50px;
+    text-decoration: none;
+}
+
+ul {
+	
+    list-style-type: none;
+    margin: 0;
+    padding: 50;
+    overflow: hidden;	
+    background-color: #1B273E;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+	
+    float: left;
+    margin-right: 40px;
+	
+	
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #2C3B59;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+body, html {
+    height: 60%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("homeImage.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5
+}
+
+.logo
+    {
+        position: absolute;
+        top: 40px;
+        left: 100px;
+
+    }
+
+p.outset 
+{
+	position: relative;
+	border-style: outset;
+	padding: 20px;
+	width: 900px;
+	left: 150px;
+	margin-bottom: 100px;
+	
+}
+
+div.ex1 {
+    padding: 25px 50px 75px 100px;
+	background-color: #ECE9EA;
+	height:600px;
+}
+
+.container {
+    position: relative;
+	left: 100px;
+    width: 30%;
+}
+
+
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  position: absolute;
+  background-color: #221A6A;
+  color: white;
+  font-size: 15px;
+  padding: 5px 5px;
+}
+
+.rightcontact {
+  width:49.5%;
+  float:right;
+  box-sizing: border-box;
+  padding: 10px 100px 10px 15px;
+}
+
+.leftcontact {
+  width:49.5%; 
+  float:left;
+  border-right: 1px dotted #CCC;
+  box-sizing: border-box;
+  padding: 10px 15px 10px 100px;
+}
+
+</style>
+<script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("slide.html"); 
+    });
+</script> 
+
+</head>
+
+<body>
+<ul class="topbar">
+  <li class="t"><text>Phone: +88 02 9661900<text></li>
+  <li class="t"><text>Fax:  +88 02 9667222 <text></li>
+  <li class="t"><text>Email: vcoffice@du.ac.bd/registrar@du.ac.bd</text></li>
+  
+</ul>
+<div class="bg"></div>
+<img src="dhaka.png" class="logo"  height="150" width="120"/>
+<ul>
+  <li><a  href="#home">Home</a></li>
+  <li><a  href="#notice">Notice</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Registration</a>
+    <div class="dropdown-content">
+      <a href="#">DU</a>
+      <a href="#">Non DU</a>
+      <a href="#">Admin</a>
+    </div>
+    <li><a href='http://www.du.ac.bd/'>DU Website</a></li>
+    <li><a href="#about">About</a></li>
+	
+	
+	
+
+  </li>
+</ul>
+
+<p class="outset" 
+<div class="w3-content w3-section" width="800">
+  
+
+ <img class="mySlides w3-animate-fading" src="curzon.jpg" height="300" width="800" > 
+  <img class="mySlides w3-animate-fading" src="razu.jpg" height="300" width="800" > 
+  <img class="mySlides w3-animate-fading" src="oporajeyo.jpg" height="300" width="800" >
+</div>
+
+</p>
+
+
+
+<div class="ex1" >
+
+
+<div class="leftcontact">
+<div class="container">
+
+  <img src="ff.png" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text"><a href="http://www.du.ac.bd/home/facilities" style="text-decoration:none;">Facilities</a></div>
+  </div>
+
+</div>  
+
+</div>
+
+<div class="rightcontact">	
+
+<div class="container">
+
+  <img src="office.png" alt="Avatar" class="image" style="width:60%">
+  <div class="middle">
+    <div class="text"><a href="http://www.du.ac.bd/home/office_and_admin/ovc" style="text-decoration:none;">Office and Administration</a></div>
+  </div>
+</div>
+
+</div>
+
+</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+</script>
+
+
+</body>
+</html>
