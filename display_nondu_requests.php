@@ -5,7 +5,9 @@ $db_user = 'root'; // Username
 $db_pass = ''; // Password
 $db_name = 'webpro'; // Database Name
 include_once('search2.html');
-$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+//$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+$conn=mysqli_connect('localhost','duvehicle','duvehicle','duvehicle');
+
 if (!$conn) {
 	die ('Failed to connect to MySQL: ' . mysqli_connect_error());	
 }
