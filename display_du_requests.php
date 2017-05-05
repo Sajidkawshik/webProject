@@ -1,10 +1,13 @@
 <?php
+include_once('control.php');
 $db_host = 'localhost'; // Server Name
 $db_user = 'root'; // Username
 $db_pass = ''; // Password
 $db_name = 'webpro'; // Database Name
 include_once('search1.html');
-$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+$conn=mysqli_connect('localhost','duvehicle','duvehicle','duvehicle');
+
+//$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 if (!$conn) {
 	die ('Failed to connect to MySQL: ' . mysqli_connect_error());	
 }
@@ -20,6 +23,7 @@ if (!$query) {
 ?>
 <html>
 <head>
+
 
 	<title>Displaying MySQL Data in HTML Table</title>
 	<style>
@@ -171,7 +175,6 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 </script>
-
 
 	<h1>Table 1</h1>
 	<table class="data-table">
