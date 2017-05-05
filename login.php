@@ -1,5 +1,6 @@
 <?php
-	$conn=mysqli_connect('localhost','root',"","webpro");
+	//$conn=mysqli_connect('localhost','root',"","webpro");
+	$conn=mysqli_connect('localhost','duvehicle','duvehicle','duvehicle');
 	if($conn->connect_errno>0)
 		echo "not connected";
 	if(isset($_POST["uname"], $_POST["psw"])) 
