@@ -15,9 +15,10 @@
      }
 	  
 	  
-	  $conn = mysql_connect('localhost', 'root', '');
-	  $db   = mysql_select_db('webpro');
- 
+	  //$conn = mysql_connect('localhost', 'root', '');
+	  //$db   = mysql_select_db('webpro');
+	  $conn=mysqli_connect('localhost','duvehicle','duvehicle','duvehicle');
+
 	  $fname =  $_POST["firstname"];
 	  $lname =  $_POST["lastname"];
 	  $email=   $_POST["email"];
