@@ -4,27 +4,34 @@
   function readURL(input) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
-
             reader.onload = function (e) {
                 $('#blah')
                     .attr('src', e.target.result)
                     .width(150)
                     .height(200);
             };
-
             reader.readAsDataURL(input.files[0]);
         }
     }
   </script>
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {
+    
+	 background:url(homeImage.jpg);	
+}
+.w3-button {width:150px;}
 
-
+</style>
 
 <body>
+       <a href="C:\xampp\htdocs\webProject\home_nav.html" class="w3-button w3-red">Go to Home</a>
 	  <h1>Registration Form</h1>
   
   
-  <form>
+  <form id="myForm" action="data_process2.php" enctype="multipart/form-data" method="POST">
 	   
 	    
     <div class="contentform">
@@ -88,7 +95,7 @@
 			<div class="form-group">
 			<p>Blood Group <span>*</span></p>	
 			<span class="icon-case"><i class="fa fa-phone"></i></span>
-				<input type="text" name="carnumber" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
+				<input type="text" name="blood" id="blood" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
                 <div class="validation"></div>
 			</div>
 
@@ -109,14 +116,14 @@
 			<div class="form-group">
 			<p>Contact number <span>*</span></p>	
 			<span class="icon-case"><i class="fa fa-phone"></i></span>
-				<input type="text" name="phonenumber" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
+				<input type="text" name="phonenumber" id="phonenumber" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
                 <div class="validation"></div>
 			</div>
 
 			<div class="form-group">
 			<p>License number <span>*</span></p>	
 			<span class="icon-case"><i class="fa fa-phone"></i></span>
-				<input type="text" name="licensenumber" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
+				<input type="text" name="licensenumber" id="licensenumber" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
                 <div class="validation"></div>
 			</div>
 			
@@ -128,9 +135,9 @@
 			</div>
 			
 			<div class="form-group">
-			<p>Valid upto <span>*</span></p>	
+			<p>License valid upto <span>*</span></p>	
 			<span class="icon-case"><i class="fa fa-phone"></i></span>
-				<input type="text" name="carnumber" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
+				<input type="text" name="valid_upto" id="valid_upto" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
                 <div class="validation"></div>
 			</div>
 			
@@ -140,18 +147,19 @@
 			<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
 			<meta charset=utf-8 />
 
+<div class="form-group">
+			<p>Image <span>*</span></p>
+<table style="border-collapse: collapse; font: 12px Tahoma;" border="1" cellspacing="5" cellpadding="5">
+<tbody><tr>
+<td>
+<input name="uploadedimage" type="file">
+</td>
 
-<style>
-  article, aside, figure, footer, header, hgroup, 
-  menu, nav, section { display: block; }
-</style>
+</tr>
 
-   <img id="blah" src="#" alt="your image" />	
-  <input type='file' name="photo" onchange="readURL(this);" accept="image/*" />
-   
-   
 
-		
+</tbody></table>
+   		
 	</div>		
 	</div>
 	</div>
@@ -159,6 +167,7 @@
 	
 </form>	
 
-  
+
 </body>
+
 </html>

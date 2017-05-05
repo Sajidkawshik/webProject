@@ -4,6 +4,14 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+img {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+
+
+
 .info p {
   text-align:center;
   color: #999;
@@ -31,11 +39,12 @@ form h1 {
 
 form {
   border-radius: 5px;
-  max-width:700px;
+  max-width:900px;
   width:100%;
-  margin: 5% auto;
+  margin: 2% auto;
   background-color: #FFFFFF;
   overflow: hidden;
+ 
 }
 
 p span {
@@ -50,9 +59,10 @@ p {
 }
 
 h1 {
+  font: 50px arial, sans-serif;
   text-align:center; 
-  color: #666;
-  text-shadow: 1px 1px 0px #FFF;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
   margin:50px 0px 0px 0px
 }
 
@@ -78,6 +88,7 @@ textarea {
   height: 130px; 
   float: left;
   padding: 0px 15px;
+  
 }
 
 .form-group {
@@ -102,6 +113,7 @@ i {
 
 .contentform {
   padding: 40px 30px;
+  
 }
 
 .bouton-contact{
