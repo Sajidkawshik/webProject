@@ -14,7 +14,7 @@ while ($tok !== false) {
     //echo "Word=$tok<br />";
     $tok = strtok(":- ");
 }
-//echo $tok;
+echo $tok;
 $sql = "SELECT * FROM reg_du WHERE car_no='$tok'";
 $sql1 = "SELECT * FROM reg_non_du WHERE car_no='$tok'";
 
