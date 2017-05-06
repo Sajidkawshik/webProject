@@ -153,7 +153,6 @@ if (!$query) {
 					<td>'.$row['contact_no'].'</td>
 					<td>'.$row['licse_no'].'</td>
 					<td>'.$row['car_no'].'</td>
-					<td>'. date('F d, Y', strtotime($row['valid_upto'])) . '</td>
 					<td>'.'<img src="', $dir, '/', $file, '" alt="', $file, 'height="100" width="100""/>'.'</td>
 				</tr>';
 				
