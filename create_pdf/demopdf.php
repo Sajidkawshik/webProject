@@ -20,5 +20,5 @@ $pdf->Cell( 40, 40, $pdf->Image($image1, 100, 100, 33.78), 0, 0, 'L', false );
 //$pdf->Cell(40,10,'This is a faltu');
 $path='../save_pdf/'.$license.'.pdf';
 $pdf->output($path,'F');
-header("Location: http://csedu.cf/duvehicle/myqrcode/swift.php?path=$path&email=$email");
+header("Location: http://csedu.cf/duvehicle/swift.php?path=$path&email=$email");
 ?>
