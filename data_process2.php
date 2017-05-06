@@ -44,7 +44,6 @@
 	//$imagename=date("d-m-Y")."-".time().$ext;
 	$target_path = "nondu_images/".$imagename;
 	$per="/var/www/html/duvehicle/nondu_images".$imagename;
-	sudo chmod($per, 777);
 	$image="nondu_images";
 	
 

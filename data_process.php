@@ -45,7 +45,6 @@
 	//$imagename=date("d-m-Y")."-".time().$ext;
 	$imagename=$licensenumber.$ext;
 	$target_path = "images/".$imagename;
-	sudo chmod("images/",777);
 	$image="images";
 	
 
