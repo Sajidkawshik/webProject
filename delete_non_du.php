@@ -37,7 +37,7 @@ if($conn === false){
  if(mysqli_query($conn, $sql))
 {
     echo "Records were deleted successfully.";
-	header("Location:myqrcode/temporary1.php?fname=$row[1]&lname=$row[2]&email=$row[3]&con_add=$row[6]&blood=$row[8]&contact=$row[9]&license=$row[11]&car=$row[12]");
+	header("Location:myqrcode/temporary1.php?fname=$row[1]&lname=$row[2]&email=$row[3]&con_add=$row[6]&blood=$row[8]&contact=$row[10]&license=$row[11]&car=$row[12]");
 }
 else
 {
