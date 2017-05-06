@@ -1,5 +1,5 @@
 <?php
-$name=(isset($_POST['name'])) ? $_POST['name']:'nu:-faltu';
+$name=(isset($_POST['name'])) ? $_POST['name']:'nu:- faltu';
 //echo $name;
 //echo "faltu";
 //$name="kawshik sajid";
@@ -9,7 +9,7 @@ $db_pass = ''; // Password
 $db_name = 'webpro'; // Database Name
 
 $conn=mysqli_connect('localhost','duvehicle','duvehicle','duvehicle');
-$tok=strtok($name,":-");
+$tok=strtok($name,":- ");
 while ($tok !== false) {
     echo "Word=$tok<br />";
     $tok = strtok(":- ");
