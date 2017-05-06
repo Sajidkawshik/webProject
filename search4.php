@@ -105,7 +105,7 @@ if (!$query) {
 </head>
 <body>
 
-	<h1>Table 2</h1>
+	<h1>Search result</h1>
 	<table class="data-table">
 		<caption class="title">Requests from Non-DU</caption>
 		<thead>

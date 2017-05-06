@@ -105,9 +105,9 @@ if (!$query) {
 </head>
 <body>
 
-	<h1>Table 1</h1>
+	<h1>Search result</h1>
 	<table class="data-table">
-		<caption class="title">Sales Data of Electronic Division</caption>
+		<caption class="title">Search result</caption>
 		<thead>
 			<tr>
 				<th>NO</th>

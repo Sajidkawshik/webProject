@@ -106,9 +106,8 @@ if (!$query) {
 </head>
 <body>
 
-	<h1>Table 1</h1>
+	<h1>Search result</h1>
 	<table class="data-table">
-		<caption class="title">Sales Data of Electronic Division</caption>
 		<thead>
 			<tr>
 				<th>NO</th>
@@ -122,7 +121,6 @@ if (!$query) {
 				<th>Contact Number</th>
 				<th>license Number</th>
 				<th>Car Number</th>
-				<th>valid upto</th>
 				<th>Image</th>
 			</tr>
 		</thead>
