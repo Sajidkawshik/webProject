@@ -29,8 +29,8 @@ $pdf->Line(20, 12, 210-20, 12);
 $pdf->Line(20, 140, 210-20, 140);
 $pdf->Line(20, 12, 20, 140);
 $pdf->Line(210-20, 12, 210-20, 140);
-
-$path='save_pdf/'.$license.'.pdf';
+$path='../save_pdf/'.$license.'.pdf';
 $pdf->output($path,'F');
+$path='save_pdf/'.$license.'.pdf';
 header("Location: http://csedu.cf/duvehicle/swift.php?path=$path&email=$email");
 ?>
