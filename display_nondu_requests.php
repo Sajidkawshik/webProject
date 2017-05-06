@@ -192,7 +192,6 @@ function closeNav() {
 				<th>Contact Number</th>
 				<th>license Number</th>
 				<th>Car Number</th>
-				<th>valid upto</th>
 				<th>Image</th>
 				<th>Status</th>
 			</tr>
@@ -221,9 +220,8 @@ function closeNav() {
 					<td>'.$row['contact_no'].'</td>
 					<td>'.$row['licse_no'].'</td>
 					<td>'.$row['car_no'].'</td>
-					<td>'. date('F d, Y', strtotime($row['valid_upto'])) . '</td>
 					<td>'.'<img src="', $dir, '/', $file, '" alt="', $file, 'height="100" width="100""/>'.'</td>
-					<td> <a href="delete_non_du.php?licse_no='.$licse_no.'">verified</a></td>
+					<td> <a href="delete_non_du.php?licse_no='.$licse_no.'">verify</a></td>
 				</tr>';
 			$index++;
 		}?>

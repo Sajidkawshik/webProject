@@ -30,7 +30,6 @@
 	  $car_number=$_POST["carnumber"];
 	  $contact_number=$_POST["phonenumber"];
 	  $license_number=$_POST["licensenumber"];
-	  $valid_upto=$_POST["valid_upto"];
 	  $blood_group=$_POST["blood"];
 	  if (!empty($_FILES["uploadedimage"]["name"])) 
 {
@@ -62,7 +61,7 @@ else{
  
 	  $sql = "INSERT INTO non_du VALUES('','$fname', '$lname','$email','$occupation',
 				'$company','$company_address','$residentialaddress','$blood_group','$city',
-				'$contact_number','$license_number','$car_number','$valid_upto','$imagename','$image')";
+				'$contact_number','$license_number','$car_number','$imagename','$image')";
 	  if( mysqli_query($conn,$sql) )
 	{
 	  header('Location: success_message.html');

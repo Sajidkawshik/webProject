@@ -5,7 +5,8 @@ $db_user = 'root'; // Username
 $db_pass = ''; // Password
 $db_name = 'webpro'; // Database Name
 
-$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+//$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+$conn=mysqli_connect('localhost','duvehicle','duvehicle','duvehicle');
 if($conn === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
