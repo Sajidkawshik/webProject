@@ -157,10 +157,10 @@ body {
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="http://localhost/webProject/display_du_requests.php">Requests from DU</a>
-  <a href="http://localhost/webProject/display_nondu_requests.php">Requests from NON_DU</a>
-  <a href="http://localhost/webProject/display_du_verified.php">DU_verified</a>
-  <a href="http://localhost/webProject/display_nondu_verified.php">Non_DU_verified</a>
+  <a href="display_du_requests.php">Requests from DU</a>
+  <a href="display_nondu_requests.php">Requests from NON_DU</a>
+  <a href="display_du_verified.php">DU_verified</a>
+  <a href="display_nondu_verified.php">Non_DU_verified</a>
                 
 </div>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Show Menu</span>
