@@ -9,5 +9,5 @@ session_start();
 		header('Location: admin.html');
 	}
 
-	echo '<a href="logout.php">logout</a>';
+	include_once('logout.html');
 ?>
