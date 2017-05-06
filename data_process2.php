@@ -65,7 +65,7 @@ else{
 				'$contact_number','$license_number','$car_number','$valid_upto','$imagename','$image')";
 	  if( mysql_query($sql) )
 	{
-	  echo "registered Successfully\n";
+	  header('Location: success_message.htnl');
 	}
 	  else
 	   echo "regestration  Failed";
