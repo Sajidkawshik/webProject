@@ -19,5 +19,5 @@ $message = Swift_Message::newInstance()
     ;
 
 $mailer->send($message);
-//header('Location: admin.html');
+header('Location: admin.html');
 ?>
