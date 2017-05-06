@@ -9,5 +9,5 @@ session_start();
 		header('Location: admin.html');
 	}
 
-	echo '<a href="http://localhost/webProject/final_login/logout.php">logout</a>';
+	echo '<a href="logout.php">logout</a>';
 ?>
