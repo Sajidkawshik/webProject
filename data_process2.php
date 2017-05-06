@@ -63,9 +63,9 @@ else{
 	  $sql = "INSERT INTO non_du VALUES('','$fname', '$lname','$email','$occupation',
 				'$company','$company_address','$residentialaddress','$blood_group','$city',
 				'$contact_number','$license_number','$car_number','$valid_upto','$imagename','$image')";
-	  if( mysql_query($sql) )
+	  if( mysqli_query($conn,$sql) )
 	{
-	  header('Location: success_message.htnl');
+	  header('Location: success_message.html');
 	}
 	  else
 	   echo "regestration  Failed";

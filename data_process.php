@@ -30,7 +30,7 @@
 	  $contactnumber=$_POST["phonenumber"];
 	  $licensenumber=$_POST["licensenumber"];
 	  //$image=$_POST["photo"];
-	  $valid_upto=$_POST["valid_upto"];
+	  //$valid_upto=$_POST["valid_upto"];
 	  $blood_group=$_POST["blood"];
 	  //$file_name=$_FILES["uploadedimage"]["name"];
 	
@@ -60,14 +60,17 @@ else{
 } 
 
 }
- 
-	  $sql = "INSERT INTO du VALUES('','$fname', '$lname','$email','$department',
+ $sql = "INSERT INTO du VALUES('','$fname', '$lname','$email','$department',
 				'$occupation','$contactaddress','$residentialaddress','$blood_group',
-				'$contactnumber','$licensenumber','$carnumber','$imagename','$image')";
-	  if( mysql_query($sql) )
+				'$contactnumber','$licensenumber','$carnumber','$valid_upto','$imagename','$image')";
+
+	  /*$sql = "INSERT INTO du (index,fname,lname,email,department,designation,con_add,res_add,blood,contact_no,licse_no,car_no,image_name,target_path)VALUES('','".$fname."', '".$lname."','".$email."','".$department."',
+				'".$occupation."','".$contactaddress."','".$residentialaddress."','".$blood_group."',
+				'".$contactnumber."','".$licensenumber."','".$carnumber."','".$imagename."','".$image."')";*/
+	if( mysqli_query($conn,$sql) )
 	{
-	  header('Location: success_message.htnl');
+	  header('Location: success_message.html');
 	}
-	  else
+	else
 	   echo "regestration  Failed";
 ?>
