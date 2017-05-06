@@ -15,7 +15,7 @@ while ($tok !== false) {
 	$token=$tok;
     $tok = strtok(": ");
 }
-echo $token;
+//echo $token;
 $sql = "SELECT * FROM reg_du WHERE car_no='$token'";
 $sql1 = "SELECT * FROM reg_non_du WHERE car_no='$token'";
 
