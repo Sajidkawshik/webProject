@@ -43,7 +43,7 @@
 	
 	//$imagename=date("d-m-Y")."-".time().$ext;
 	$target_path = "nondu_images/".$imagename;
-	$per="/var/www/html/duvehicle/nondu_images".$imagename;
+	$per="nondu_images/".$imagename;
 	$image="nondu_images";
 	
 

@@ -63,7 +63,7 @@ else{
  
 	  $sql = "INSERT INTO du VALUES('','$fname', '$lname','$email','$department',
 				'$occupation','$contactaddress','$residentialaddress','$blood_group',
-				'$contactnumber','$licensenumber','$carnumber','$valid_upto','$imagename','$image')";
+				'$contactnumber','$licensenumber','$carnumber','$imagename','$image')";
 	  if( mysql_query($sql) )
 	{
 	  header('Location: success_message.htnl');
