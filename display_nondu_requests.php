@@ -223,7 +223,7 @@ function closeNav() {
 					<td>'.$row['car_no'].'</td>
 					<td>'. date('F d, Y', strtotime($row['valid_upto'])) . '</td>
 					<td>'.'<img src="', $dir, '/', $file, '" alt="', $file, 'height="100" width="100""/>'.'</td>
-					<td> <a href="http://localhost/webProject/delete_non_du.php?licse_no='.$licse_no.'">verified</a></td>
+					<td> <a href="delete_non_du.php?licse_no='.$licse_no.'">verified</a></td>
 				</tr>';
 			$index++;
 		}?>

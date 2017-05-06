@@ -4,7 +4,9 @@ $db_user = 'root'; // Username
 $db_pass = ''; // Password
 $db_name = 'webpro'; // Database Name
 
-$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+//$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+$conn=mysqli_connect('localhost','duvehicle','duvehicle','duvehicle');
+
 if (!$conn) {
 	die ('Failed to connect to MySQL: ' . mysqli_connect_error());	
 }
@@ -131,7 +133,7 @@ if (!$query) {
 		{
 			$name="delete.php";
 			$username=$row['fname'];
-			echo $username;
+			//echo $username;
 			$dir=$row['target_path'];
 			$file=$row['image_name'];
 			echo '<tr>

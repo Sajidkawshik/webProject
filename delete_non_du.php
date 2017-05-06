@@ -5,7 +5,9 @@ $db_user = 'root'; // Username
 $db_pass = ''; // Password
 $db_name = 'webpro'; // Database Name
 
-$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+//$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+$conn=mysqli_connect('localhost','duvehicle','duvehicle','duvehicle');
+
 if($conn === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
@@ -17,8 +19,8 @@ if($conn === false){
  $pql="SELECT * FROM non_du WHERE licse_no='$licse_no'"; 
  $query=mysqli_query($conn,$pql);
  $row = mysqli_fetch_array($query);
- echo "faltu";
- echo $row[2];
+ //echo "faltu";
+ //echo $row[2];
  $mql= "INSERT INTO reg_non_du VALUES ('','$row[1]', '$row[2]', '$row[3]','$row[4]','$row[5]','$row[6]','$row[7]',
  '$row[8]','$row[9]','$row[10]','$row[11]','$row[12]','$row[13]','$row[14]','$row[15]')";
  $query=mysqli_query($conn,$mql);

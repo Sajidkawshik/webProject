@@ -3,7 +3,9 @@ $db_host = 'localhost'; // Server Name
 $db_user = 'root'; // Username
 $db_pass = ''; // Password
 $db_name = 'webpro'; // Database Name
-$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+//$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+$conn=mysqli_connect('localhost','duvehicle','duvehicle','duvehicle');
+
 if (!$conn) {
 	die ('Failed to connect to MySQL: ' . mysqli_connect_error());	
 }
@@ -149,7 +151,7 @@ if (!$query) {
 					<td>'.$row['car_no'].'</td>
 					<td>'. date('F d, Y', strtotime($row['valid_upto'])) . '</td>
 					<td>'.'<img src="', $dir, '/', $file, '" alt="', $file, 'height="100" width="100""/>'.'</td>
-					<td> <a href="http://localhost/webProject/delete_non_du.php?user='.$username.'">verified</a></td>
+					<td> <a href="delete_non_du.php?licse_no='.$id.'">verified</a></td>
 				</tr>';
 			$index++;
 		}?>
