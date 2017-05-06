@@ -106,7 +106,7 @@ if (!$query) {
 
 	<h1>Search result</h1>
 	<table class="data-table">
-		<caption class="title">Requests from Non-DU</caption>
+		<caption class="title">Search result</caption>
 		<thead>
 			<tr>
 				<th>NO</th>
