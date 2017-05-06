@@ -15,7 +15,7 @@ $contact=$_GET['contact'];
 //echo $contact;
 $license=$_GET['license'];
 $car=$_GET['car'];
-$codeContents='Name:- '.$fname.' '.$lname.' '.'Adress:- '.$con_add.' '.'Mobile:- '.$contact.' '.'License NO:- '.$license.' '.'Car NO:- '.$car;
+$codeContents='Name: '.$fname.' '.$lname.' '.'Adress: '.$con_add.' '.'Mobile: '.$contact.' '.'License NO: '.$license.' '.'Car NO: '.$car;
 QRcode::png($codeContents, $tempDir.$license.'.png', QR_ECLEVEL_L, 3);
 header("Location: http://csedu.cf/duvehicle/create_pdf/demopdf1.php?username=$username&car=$car&license=$license&email=$email");
 ?>
