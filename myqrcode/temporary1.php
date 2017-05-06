@@ -2,7 +2,7 @@
  include('phpqrcode/qrlib.php'); 
  define('EXAMPLE_TMP_SERVERPATH', dirname(__FILE__).'/temp/');
  define('EXAMPLE_TMP_URLRELPATH', 'phpqrcode/temp/');
- $tempDir = "http://csedu.cf/duvehicle/myqrcode/temp/";
+ $tempDir = "../myqrcode/temp/";
  echo $tempdir;
 $fname=$_GET['fname'];
 $lname=$_GET['lname'];
