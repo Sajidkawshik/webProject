@@ -152,7 +152,7 @@ body {
 		{
 			background-color: #ffcccc;
 		}
-		.w3-button {width:150px;height:50px;}
+		
 	</style>
 </head>
 <body>

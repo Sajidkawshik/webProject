@@ -39,7 +39,7 @@
 	$temp_name=$_FILES["uploadedimage"]["tmp_name"];
 	$imgtype=$_FILES["uploadedimage"]["type"];
 	$ext= GetImageExtension($imgtype);
-	$imagename=$licensenumber.$ext;
+	$imagename=$license_number.$ext;
 	
 	//$imagename=date("d-m-Y")."-".time().$ext;
 	$target_path = "nondu_images/".$imagename;
