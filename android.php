@@ -15,7 +15,7 @@ while ($tok !== false) {
     $tok = strtok(":- ");
 }
 echo $tok;
-$sql = "SELECT * FROM du WHERE fname='$tok'";
+$sql = "SELECT * FROM du WHERE car_no='$tok'";
  
  
 	    $res = mysqli_query($conn,$sql);
