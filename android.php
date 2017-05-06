@@ -16,17 +16,17 @@ while ($tok !== false) {
 }
 echo $tok;
 $sql = "SELECT * FROM reg_du WHERE car_no='$tok'";
-$sql1 = "SELECT * FROM reg_non_du WHERE car_no='$tok'";
+//$sql1 = "SELECT * FROM reg_non_du WHERE car_no='$tok'";
 
 	    $res = mysqli_query($conn,$sql);
-		$res1 = mysqli_query($conn,$sql1);
+		//$res1 = mysqli_query($conn,$sql1);
 		$row = mysqli_fetch_array($res);
-		$row1 = mysqli_fetch_array($res1);
+		//$row1 = mysqli_fetch_array($res1);
 		//echo $row[1];
 		if( $row[0] > 0 )
 		 echo "Verified DU user";
-		else if($row1[0] > 0)
-		 echo "Verified Non DU user";
+		//else if($row1[0] > 0)
+		 //echo "Verified Non DU user";
 		else
 			echo "Invalid user";
 ?> 
