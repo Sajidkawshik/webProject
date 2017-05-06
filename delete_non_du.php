@@ -22,7 +22,7 @@ if($conn === false){
  //echo "faltu";
  //echo $row[2];
  $mql= "INSERT INTO reg_non_du VALUES ('','$row[1]', '$row[2]', '$row[3]','$row[4]','$row[5]','$row[6]','$row[7]',
- '$row[8]','$row[9]','$row[10]','$row[11]','$row[12]','$row[13]','$row[14]','$row[15]')";
+ '$row[8]','$row[9]','$row[10]','$row[11]','$row[12]','$row[13]','$row[14]')";
  $query=mysqli_query($conn,$mql);
  if(mysqli_query($conn, $query))
 {
