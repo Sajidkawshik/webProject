@@ -12,7 +12,7 @@ $conn=mysqli_connect('localhost','duvehicle','duvehicle','duvehicle');
 $tok=strtok($name,":-");
 while ($tok !== false) {
     echo "Word=$tok<br />";
-    $tok = strtok(":-");
+    $tok = strtok(":- ");
 }
 echo $tok;
 $sql = "SELECT * FROM du WHERE fname='$tok'";
