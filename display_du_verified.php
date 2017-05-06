@@ -176,9 +176,9 @@ function closeNav() {
 }
 </script>
 
-	<h1>Table 1</h1>
+	<h1>Table </h1>
 	<table class="data-table">
-		<caption class="title">Sales Data of Electronic Division</caption>
+		<caption class="title">Verified DU affiliated users</caption>
 		<thead>
 			<tr>
 				<th>NO</th>

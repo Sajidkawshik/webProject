@@ -175,9 +175,9 @@ function closeNav() {
 }
 </script>
 
-	
+	<h1>Table </h1>
 	<table class="data-table">
-		<caption class="title">Requests from Non-DU</caption>
+		<caption class="title">Request of DU unaffiliated users</caption>
 		<thead>
 			<tr>
 				<th>NO</th>
