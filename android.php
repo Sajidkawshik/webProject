@@ -12,11 +12,12 @@ $conn=mysqli_connect('localhost','duvehicle','duvehicle','duvehicle');
 $tok=strtok($name,":- ");
 while ($tok !== false) {
     //echo "Word=$tok<br />";
+	$token=$tok;
     $tok = strtok(":- ");
 }
-echo $tok;
-$sql = "SELECT * FROM reg_du WHERE car_no='$tok'";
-//$sql1 = "SELECT * FROM reg_non_du WHERE car_no='$tok'";
+echo $token;
+$sql = "SELECT * FROM reg_du WHERE car_no='$token'";
+//$sql1 = "SELECT * FROM reg_non_du WHERE car_no='$token'";
 
 	    $res = mysqli_query($conn,$sql);
 		//$res1 = mysqli_query($conn,$sql1);
