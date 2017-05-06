@@ -2,7 +2,7 @@
  include('phpqrcode/qrlib.php'); 
  define('EXAMPLE_TMP_SERVERPATH', dirname(__FILE__).'/temp/');
  define('EXAMPLE_TMP_URLRELPATH', 'phpqrcode/temp/');
- $tempDir = "../myqrcode/temp/";
+ $tempDir = "temp/";
  
 $fname=$_GET['fname'];
 $lname=$_GET['lname'];
