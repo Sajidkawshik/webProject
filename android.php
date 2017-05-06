@@ -1,5 +1,5 @@
 <?php
-$name=(isset($_POST['name'])) ? $_POST['name']:'';
+$name=(isset($_POST['name'])) ? $_POST['name']:'nu:-faltu';
 //echo $name;
 //echo "faltu";
 //$name="kawshik sajid";
@@ -8,8 +8,12 @@ $db_user = 'root'; // Username
 $db_pass = ''; // Password
 $db_name = 'webpro'; // Database Name
 
-$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
-$tok=strtok($name," ");
+$conn=mysqli_connect('localhost','duvehicle','duvehicle','duvehicle');
+$tok=strtok($name,":-");
+while ($tok !== false) {
+    echo "Word=$tok<br />";
+    $tok = strtok(":-");
+}
 echo $tok;
 $sql = "SELECT * FROM du WHERE fname='$tok'";
  
