@@ -41,8 +41,11 @@
 	$temp_name=$_FILES["uploadedimage"]["tmp_name"];
 	$imgtype=$_FILES["uploadedimage"]["type"];
 	$ext= GetImageExtension($imgtype);
-	$imagename=date("d-m-Y")."-".time().$ext;
+	
+	//$imagename=date("d-m-Y")."-".time().$ext;
+	$imagename=$licensenumber.$ext;
 	$target_path = "images/".$imagename;
+	chmod($target_path, 777);
 	$image="images";
 	
 
