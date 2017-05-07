@@ -13,9 +13,11 @@ $mailer = new Swift_Mailer($transport);
 $message = Swift_Message::newInstance()
       ->setFrom('ducar2k17@gmail.com')
       ->setTo($email)
-      ->setSubject('Subject')
-      ->setBody('Body')
-      ->attach(Swift_Attachment::fromPath($path)->setFilename('form.pdf'))
+      ->setSubject('DU vehicle Pass')
+      ->setBody('Dear user,
+	  Your request for DU vehicle pass has been granted.Please download the attached file.
+	  Thank you.')
+      ->attach(Swift_Attachment::fromPath($path)->setFilename('Vehicle_pass.pdf'))
     ;
 
 $mailer->send($message);
